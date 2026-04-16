@@ -9,3 +9,8 @@ terraform {
         region = "eu-west-2"
     }
 }
+
+resource "aws_ecr_repository" "dunjee_repo" {
+    name = "dunjee_terraform_ecr"
+    image_tag_mutability = "MUTABLE"
+}
